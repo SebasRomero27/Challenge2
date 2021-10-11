@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cabin</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/Javascript" src="../CSS- JS/cabin.js"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Icons/tent.png">
+    <link rel="stylesheet" href="../CSS- JS/Reto2.css">
+    <style>
+    body
+    {
+      background-color: #f6e99f;
+      color: black;
+      font-size: 30px;
+      font-family: 'Lato', sans-serif;
+      font-size: 25px;
+    }
+    </style>
+    <style>
+      p
+      {
+       text-align:center
+      }
+    </style>
+    
+</head>
+<body>
+    <button class="btn">
+    <i class="fa fa-home"></i>
+    <a href="Index.html"> Home </a>
+    </button>
+    <h2><p> Cabins administration form</p></h2>
+    <p>
+      <input type="number" id="nId" placeholder="ID">
+      <input type="text" id="brand" placeholder="Brand">
+      <input type="number" id="rooms" placeholder="Room">
+      <input type="number" id="category_id" placeholder="Category">
+      <input type="text" id="name" placeholder="Name">
+    </p>
+
+    <p>   
+    <button class="btn" onclick="postInfo()">
+    <i class="fa fa-save"> Save </i>
+    </button>
+
+    <button class="btn" onclick="getInfo()">
+    <i class="fa fa-search"> Load </i>
+    </button>
+
+    <button class="btn" onclick="updateInfo()">
+    <i class="fa fa-edit"> Edit </i>
+    </button>
+    </p>
+    <p>
+      <div>
+        <table>
+          <tbody id="dashboard">          
+          </tbody>
+        </table>
+      </div>
+    </p>
+
+
+
+
+
+</body>
+</html>
